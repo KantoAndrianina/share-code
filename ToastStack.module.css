@@ -1,6 +1,5 @@
 /*
  * ToastStack.module.css
- * Pile de notifications en bas à droite — clic pour fermer.
  */
 
 .stack {
@@ -20,10 +19,11 @@
   max-width: 380px;
   padding: 12px 16px;
   border-radius: 8px;
-  background: var(--bg-surface, #ffffff);
-  color: var(--text, #111111);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  color: #111111;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
   animation: slideIn 0.2s ease-out;
 }
