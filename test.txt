@@ -1,3 +1,12 @@
-const toast = useToast()
-// dans un bouton :
-<button onClick={() => toast.success('Hello !')}>Test toast</button>
+import { LibraryStatus } from '@/types';
+
+import { useToast } from '../hooks/useToast';
+
+const toast = useToast();
+
+{/* TEST TOAST — à supprimer après vérification */}
+<div style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
+  <button onClick={() => toast.success('Film ajouté ✓')}>Test success</button>
+  <button onClick={() => toast.error('Connexion impossible')}>Test error</button>
+  <button onClick={() => toast.info('Information')}>Test info</button>
+</div>
