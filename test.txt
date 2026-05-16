@@ -1,0 +1,3 @@
+const toast = useToast()
+// dans un bouton :
+<button onClick={() => toast.success('Hello !')}>Test toast</button>
