@@ -15,5 +15,9 @@ function MyComponent() {
     toast.error('Connexion impossible')
   }
 
+  function handleInfo() {
+    toast.info('Information importante')
+  }
+
   // ...
 }
