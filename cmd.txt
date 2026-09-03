@@ -1,22 +1,2 @@
 
-brew install gh
-gh auth login
-
-GitHub.com
-HTTPS
-Yes
-Login with a web browser
-
-git checkout -b test-access-francko
-echo "test" > ACCESS_CHECK_FRANCKO.md
-git add ACCESS_CHECK_FRANCKO.md
-git commit -m "test: vérification d'accès"
-git push -u origin test-access-francko
-
-git push -u origin test-access-francko
-
-
-git checkout main
-git branch -D test-access-francko
-git push origin --delete test-access-francko
-rm ACCESS_CHECK_FRANCKO.md 2>/dev/null
+https://github.com/orgs/Master-2-MIAGE-MBDS-ANTENNES/projects/5
