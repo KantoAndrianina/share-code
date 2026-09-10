@@ -26,3 +26,8 @@ npx react-native run-ios --simulator "iPhone 17"
 
 17 pro
 npx react-native run-ios --simulator "iPhone 17 Pro"
+
+a faire 
+avant de retester Noma a dit de partager Ça entre Francko et moi pour augmenter nos pr
+•⁠  ⁠la suppression de compte utilisateur visible côté ADMIN (am lay front web zany)
+•⁠  ⁠⁠le conducteur n'a pas encore accès à un historique de ses trajets passés (contrairement au passager)
