@@ -1,8 +1,10 @@
 Jane Doe
 passager.test@univ.fr
+passager2.test@univ.fr
 
 John Doe
 conducteur.test@univ.fr
+conducteur2.test@univ.fr
 
 Test1234!
 
@@ -18,3 +20,9 @@ source .env
 set +a
 ./gradlew bootRun
 
+IOS
+17 pro
+npx react-native run-ios --simulator "iPhone 17"
+
+17 pro
+npx react-native run-ios --simulator "iPhone 17 Pro"
