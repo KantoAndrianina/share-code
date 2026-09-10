@@ -14,11 +14,37 @@ AdminPassword123!
 Test lieu :
 gare-antibes-est-biot
 
-Lancer backend : 
+Lancer backend : dans le dossier backend
+pour ecouter lui-meme :
 set -a
 source .env
 set +a
 ./gradlew bootRun
+
+pour ecouter les autres : ********
+set -a
+source .env
+set +a
+export SERVER_ADDRESS=0.0.0.0
+./gradlew bootRun
+
+lancer mongoDB : dans le dosssier backend
+docker compose -f docker-compose-dev.yml up -d
+
+lancer metro : dans le dossier mobile
+cd mobile
+npm start
+
+recuperer adresse IP mac : dans un terminal normal
+ipconfig getifaddr en0 
+: 192.168.1.227
+
+Configurer Ad IP : app iphone
+http://<IP_DU_MAC>:8080/api/v1 donc http://192.168.1.227:8080/api/v1
+
+lancer admin : dans le dossier front
+npm install
+npm start
 
 IOS
 17 pro
@@ -28,6 +54,6 @@ npx react-native run-ios --simulator "iPhone 17"
 npx react-native run-ios --simulator "iPhone 17 Pro"
 
 a faire 
-avant de retester Noma a dit de partager Ça entre Francko et moi pour augmenter nos pr
+avant de retester Nomena a dit de partager Ça entre Kanto et moi pour augmenter nos pr
 •⁠  ⁠la suppression de compte utilisateur visible côté ADMIN (am lay front web zany)
 •⁠  ⁠⁠le conducteur n'a pas encore accès à un historique de ses trajets passés (contrairement au passager)
