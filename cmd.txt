@@ -2,9 +2,15 @@ Jane Doe
 passager.test@univ.fr
 passager2.test@univ.fr
 
+Jack Williams
+passager3.test@univ.fr
+
 John Doe
 conducteur.test@univ.fr
 conducteur2.test@univ.fr
+
+Peter Walker
+conducteur3.test@univ.fr
 
 Test1234!
 
@@ -13,6 +19,40 @@ AdminPassword123!
 
 Test lieu :
 gare-antibes-est-biot
+
+Voir l'etat des actif et inactif :
+./dev status
+
+pour tout arreter :
+./dev down
+
+liste devices actifs :
+adb devices -l
+
+arreter emulateurs android :
+adb -s emulator-5554 emu kill
+adb -s emulator-5556 emu kill
+
+relancer Backend + Mongo + Front (un seul coup) :
+./dev up
+
+afficher reload :
+adb -s emulator-5554 shell input keyevent 82
+adb -s emulator-5556 shell input keyevent 82
+
+demmarrer 2 emulateurs android :
+emulator -avd Pixel_Driver &
+emulator -avd Pixel_Test &
+
+propre android :
+adb -s emulator-5554 reverse tcp:8081 tcp:8081
+adb -s emulator-5556 reverse tcp:8081 tcp:8081
+adb -s emulator-5554 uninstall com.mobile
+adb -s emulator-5556 uninstall com.mobile
+adb -s emulator-5554 install mobile/android/app/build/outputs/apk/debug/app-debug.apk
+adb -s emulator-5556 install mobile/android/app/build/outputs/apk/debug/app-debug.apk
+adb -s emulator-5554 shell am start -n com.mobile/.MainActivity
+adb -s emulator-5556 shell am start -n com.mobile/.MainActivity
 
 Lancer backend : dans le dossier backend
 pour ecouter lui-meme :
@@ -57,3 +97,9 @@ a faire
 avant de retester Nomena a dit de partager Ça entre Kanto et moi pour augmenter nos pr
 •⁠  ⁠la suppression de compte utilisateur visible côté ADMIN (am lay front web zany)
 •⁠  ⁠⁠le conducteur n'a pas encore accès à un historique de ses trajets passés (contrairement au passager)
+
+
+
+Android
+Driver
+emulator -avd Pixel_Driver &
