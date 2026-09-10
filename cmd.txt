@@ -1,2 +1,18 @@
+Jane Doe
+passager.test@univ.fr
 
-https://github.com/orgs/Master-2-MIAGE-MBDS-ANTENNES/projects/5
+John Doe
+conducteur.test@univ.fr
+
+Test1234!
+
+admin@test.local
+AdminPassword123!
+
+
+Lancer backend : 
+set -a
+source .env
+set +a
+./gradlew bootRun
+
