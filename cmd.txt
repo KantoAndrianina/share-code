@@ -9,6 +9,8 @@ Test1234!
 admin@test.local
 AdminPassword123!
 
+Test lieu :
+gare-antibes-est-biot
 
 Lancer backend : 
 set -a
