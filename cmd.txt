@@ -1,16 +1,18 @@
 Jane Doe
 passager.test@univ.fr
-passager2.test@univ.fr
-
-Jack Williams
-passager3.test@univ.fr
 
 John Doe
 conducteur.test@univ.fr
-conducteur2.test@univ.fr
 
-Peter Walker
-conducteur3.test@univ.fr
+Passager
+Peter Parker
+peterparker@univ.fr
+
+Conducteur
+Johnny Walker
+johnnywalker@univ.fr
+
+hiii
 
 Test1234!
 
@@ -32,6 +34,16 @@ adb devices -l
 arreter emulateurs android :
 adb -s emulator-5554 emu kill
 adb -s emulator-5556 emu kill
+
+clear mobile : 
+adb -s emulator-5554 shell pm clear com.mobile
+adb -s emulator-5556 shell pm clear com.mobile
+
+reinstall ap :
+npx react-native run-android --deviceId=emulator-5554
+
+ensuite
+npx react-native run-android --deviceId=emulator-5556
 
 relancer Backend + Mongo + Front (un seul coup) :
 ./dev up
