@@ -1,1 +1,21 @@
-https://docs.google.com/forms/d/e/1FAIpQLSc3aKsVJt3caU5p-m9gWXO9-ohPJMXO0brSDqR9s7PeCx1MdQ/viewform?pli=1
+Vous trouverez ci-dessous le retour sur la version intermédiaire de votre mémoire et de votre plan de présentation pour la soutenance du Master 2 MBDS. Il ne s'agit pas d'une note : l'objectif est de vous indiquer ce qu'il faut améliorer avant la version finale.
+
+Votre fiche d'évaluation complète (tous les critères, avec un commentaire pour chacun) :
+https://www.google.com/url?q=https://docs.google.com/document/d/1eF1ljmM-3xNhvgjJebojy4wtHWMT2-L8VY3slk1K1Hk/view&source=gmail&ust=1790964663250000&sa=E
+(Google Docs, partagée uniquement avec vous ; téléchargeable en Word ou PDF via Fichier > Télécharger)
+
+Avis global : Corrections mineures
+
+Points forts
+- Mémoire complet qui suit le plan type MBDS, avec une contribution personnelle très clairement délimitée par rapport au lot A.
+- Choix techniques argumentés par deux matrices pondérées (architectures, bibliothèques PDF) aux calculs justes, et sources datées avec biais signalé.
+- Réalisation solide et prouvée : 8 modules, 413 tests, reprise après arrêt brutal sans perte ni doublon, fidélité de 0,01 mm sur 336 points pour un seuil de 0,1 mm.
+- Démarche de test exemplaire : tests de contrat partagés entre les deux lots, sondes qui cassent le code exprès pour vérifier que les tests échouent.
+- Honnêteté remarquable sur ce qui n'est pas fait (conversion colorimétrique, charge, audit) et plan de risques à jour avec statut.
+
+Priorités d'amélioration
+1. Ajouter un modèle de données (diagramme de classes ou MCD, puis modèle logique) en 8.2.2, avec dictionnaire en annexe, ainsi que les captures du back-office en 6.3.1.
+2. Nommer la méthode de gestion de projet et ses artefacts, et présenter un planning initial vs réalisé daté avec les écarts chiffrés (5.1.2 et 5.4).
+3. Compléter l'état de l'art : solutions du marché (plateformes de livres photo, API d'impression à la demande), « développer vs acquérir », loi 2014-038, contexte local et coût total de possession, tableau de synthèse des choix.
+4. Harmoniser mémoire et slides sur la mise en ligne (serveur annoncé aux slides 15 et 20, absent du mémoire) et corriger « neuf » anomalies vs onze au tableau 16.
+5. Forme : table des acronymes, pagination x/N (mémoire et slides), jury complet sur la page de garde et la diapositive de titre, « Conclusion » avec % et statut par livrable.
